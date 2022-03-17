@@ -1,0 +1,162 @@
+/* start globle rule*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --main-color: #023e8a;
+  --main-colorP: #fff;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+body {
+  font-family: "Work Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end globle rule*/
+.sign-up {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../image/6.jpeg);
+  background-size: cover;
+}
+.sign-up .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up .container form {
+  box-shadow: 0 2px 4px rgba(0 0 0 / 60%);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(238, 238, 238, 0.479);
+}
+
+.sign-up .container form h2 {
+  padding: 10px;
+  text-align: center;
+}
+.sign-up .container form .first {
+  padding: 10px;
+}
+.sign-up .container form .data {
+  display: flex;
+  padding: 0 10px 10px;
+  flex-direction: column;
+}
+.sign-up .container form .first input,
+.sign-up .container form input {
+  padding: 8px 25px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.sign-up .container form input {
+  margin-bottom: 10px;
+}
+
+.sign-up .container form .radios {
+  padding: 0 10px 10px;
+}
+.sign-up .container form .radios h3 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.sign-up .container form .radios .hendle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-up .container form .radios .hendle label {
+  cursor: pointer;
+}
+.sign-up .container form .radios .hendle .one,
+.sign-up .container form .radios .hendle .two,
+.sign-up .container form .radios .hendle .three {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.sign-up .container form .date {
+  padding: 0 20px;
+}
+
+.sign-up .container form .date .handel {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .sign-up .container form .date .one,
+.sign-up .container form .date .two,
+.sign-up .container form .date .three {
+  border: 1px solid #ddd;
+  padding: 4px 20px;
+  border-radius: 5px;
+} */
+#month,
+#day,
+#years {
+  width: 100%;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgba(255, 250, 250, 0);
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+}
+
+.sign-up .container form .buttom {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up .container form .buttom a {
+  padding: 8px 50px;
+  border-radius: 20px;
+  font-size: 15px;
+  outline: none;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}

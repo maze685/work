@@ -1,0 +1,124 @@
+/* start globle rule*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --main-color: #023e8a;
+  --main-colorP: #fff;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+body {
+  font-family: "Work Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end globle rule*/
+.container {
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+}
+.slide {
+  height: 70vh;
+  cursor: pointer;
+  margin: 0 8px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+  transition: all 0.5s ease-in-out;
+  background-size:cover;
+}
+.slide.active {
+  flex: 10;
+  box-shadow: inset 0 -20px 100px #202020;
+}
+.container .slide .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY( -50%);
+  width: 550px;
+  padding: 10px;
+}
+.container .slide .content .text {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  /* text-align: center; */
+}
+.container .slide .content .text h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: bolder;
+}
+.container .slide .content .text p{
+  margin: 10px;
+  font-size: 15px;
+  /* color:black; */
+  font-weight: bold;
+}
+.container .slide .content .text a {
+  padding: 8px 50px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-weight: bold;
+  background-color: #03a9f4;
+  color: white;
+  cursor: pointer;
+}
+
+.container .slide .content .form1 button {
+  padding: 8px 50px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-weight: bold;
+  background-color: #03a9f4;
+  color: white;
+  cursor: pointer;
+}

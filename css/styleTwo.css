@@ -1,0 +1,149 @@
+/* start globle rule*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --main-color: #023e8a;
+  --main-colorP: #fff;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+body {
+  font-family: "Work Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end globle rule*/
+.test {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../image/6.jpeg);
+  background-size: cover;
+  color: white;
+}
+.test .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.test .container form {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0 0 0 / 40%);
+  padding: 10px;
+  width: 35%;
+  flex: 1;
+  background-color: rgba(238, 238, 238, 0.493);
+}
+.test .container form h3 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+.test .container form .data {
+  margin: 10px 0;
+}
+.test .container form .data i {
+  padding: 10px;
+}
+.test .container form input[type="email"],
+.test .container form input[type="password"] {
+  padding: 8px;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  text-transform: lowercase;
+  position: relative;
+}
+
+.test .container form .login {
+  display: flex;
+  flex-direction: column;
+}
+.test .container form .login p {
+  align-self: flex-end;
+  width: fit-content;
+  margin-right: 45px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.test .container form .login p:hover {
+  color: var(--main-color);
+}
+.test .container form .login a {
+  background-color: var(--main-color);
+  width: fit-content;
+  padding: 8px 50px;
+  border-radius: 25px;
+  align-self: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.test .container .media {
+  padding: 10px;
+  text-align: center;
+  max-width: 100%;
+}
+.test .container .media h4 {
+  margin-bottom: 10px;
+}
+.test .container .media a {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+.test .container .media a img {
+  width: 50px;
+  height: 30px;
+}
+.test .container .media a img:first-child {
+  width: 30px;
+}
+.test .container .media a img.ins {
+  width: 60px;
+}
+hr {
+  width: 70%;
+  margin: 10px auto;
+}
+i {
+  color: black;
+}
